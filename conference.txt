@@ -1,4 +1,4 @@
-
+freeswitch会议指令：
 conference list
 conference <conf name> count
 conference <conf name> list
@@ -25,3 +25,62 @@ conference <conf name> recording resume <filename>
 conference <conf name> recording stop <filename>
 conference <conf name> vid-floor <member_id> force
 conference <conf name> transfer <conference_name> <member id> [...<member id>]
+
+例子:
+conference list
+conference 35000-192.168.100.137 count
+conference 35000-192.168.100.137 list
+conference 35000-192.168.100.137 xml_list
+conference 35000-192.168.100.137 vid-layer 2 2
+conference 35000-192.168.100.137 vid-layout list
+conference 35000-192.168.100.137 vid-layout 3x3
+conference 35000-192.168.100.137 vid-fps 15
+conference 35000-192.168.100.137 vid-write-png /tmp/ss
+conference 35000-192.168.100.137 mute 4
+conference 35000-192.168.100.137 unmute 4
+conference 35000-192.168.100.137 vmute 10
+conference 35000-192.168.100.137 unvmute 10
+conference 35000-192.168.100.137 kick 23
+conference 35000-192.168.100.137 lock
+conference 35000-192.168.100.137 unlock
+conference 35000-192.168.100.137 play /tmp/hh.mp4
+conference 35000-192.168.100.137 stop all
+conference 35000-192.168.100.137 record /tmp/11.wav|11.mp4
+conference 35000-192.168.100.137 norecord /tmp/11.wav|11.mp4
+conference 35000-192.168.100.137 recording start /tmp/text/text.wav
+conference 35000-192.168.100.137 recording pause /tmp/text/text.wav
+conference 35000-192.168.100.137 recording resume /tmp/text/text.wav
+conference 35000-192.168.100.137 recording stop /tmp/text/text.wav
+conference <conf name> vid-floor 1 force
+conference 35000-192.168.100.137 transfer 35001-192.168.100.137 33
+
+描述:
+列出会议室及会议中成员数
+查看当前会议中的成员数
+查看当前会议中的成员的详细信息
+以xml格式显示成员的详细信息
+更改成员在会议中的位置
+列出会议的所有布局
+更改会议布局
+设置视频输出的帧率（每秒）
+抓拍视频图片
+设置声音静音
+取消声音静音
+设置视频静音
+取消视频静音
+踢掉会议成员
+锁定会议
+取消会议锁定
+播放视频
+停止视频播放
+录音/录像
+取消录音/录像
+开始记录会议
+暂停记录会议
+恢复会议记录
+停止会议记录
+设置floor
+从35000转换到35001会议室
+
+
+
