@@ -1,0 +1,27 @@
+
+conference list
+conference <conf name> count
+conference <conf name> list
+conference <conf name> xml_list
+conference <conf name> vid-layer <member_id><position>
+conference <conf name> vid-layout list
+conference <conf name> vid-layout <layout_name>
+conference <conf name> vid-fps <fps>
+conference <conf name> vid-write-png <path>
+conference <conf name> mute <member_id>
+conference <conf name> unmute <member_id>
+conference <conf name> vmute <member_id>
+conference <conf name> unvmute <member_id>
+conference <conf name> kick|hup <member_id>
+conference <conf name> lock
+conference <conf name> unlock
+conference <conf name> play <file_path>
+conference <conf name> stop all
+conference <conf name> record <filename>
+conference <conf name> norecord <filename>
+conference <conf name> recording start <filename>
+conference <conf name> recording pause <filename>
+conference <conf name> recording resume <filename>
+conference <conf name> recording stop <filename>
+conference <conf name> vid-floor <member_id> force
+conference <conf name> transfer <conference_name> <member id> [...<member id>]
